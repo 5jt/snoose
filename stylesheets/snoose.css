@@ -1,0 +1,149 @@
+/*
+  title: style rules for snooseboulevard.org
+*/
+
+* {
+
+  margin: 0;
+  padding:0;
+}
+body {
+  font-size: 1.6em;
+  position: relative;
+  font-family: 'Baskerville','Times New Roman',serif;
+  line-height: 1.3em;
+}
+em {
+  font-style:italic
+  }
+  li {
+  margin-bottom: 0.3em;
+}
+strong {
+  font-weight: bold;
+}
+p, ul {
+  margin-bottom: 0.8em;
+}
+ul {
+  margin-left: 2em;
+}
+ul.blocks {
+  list-style: none;
+  margin: 1em 0;
+}
+ol {
+  padding-left: 1.1em;
+  list-style: decimal;
+}
+.blocks li {
+  margin-bottom: 1em;
+}
+h1 {
+  font-size: 2.4em;
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+h3 {
+  font-size: 1.4em;
+  margin-bottom: 0.9em;
+  margin-top: 1em;
+}
+h4 {
+  font-size: 1.2em;
+  margin-bottom: 0.6em;
+  margin-top: 1em;
+}
+
+nav {
+  position: absolute; top: 0px; left: 0px; z-index: 3;
+  /*font-weight: bold;*/
+  padding: 1em;
+}
+a {
+	color:red;
+}
+
+nav a {
+  display: inline-block;
+  color: #ddd;
+  padding: .5em;
+}
+nav a:hover {
+  color: white;
+}
+.reverse {
+  background-color: black;
+  color: #eee;
+}
+.reverse a {
+  color: #8e8;
+}
+.section {
+  padding: 3em;
+}
+.red {
+  color: red;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 600px) { /*breakpoint*/
+  .columns {
+    grid-template-columns: none;
+  }
+}
+.column {
+  max-width: 30em;
+  padding: 0 2em;
+}
+
+#area {
+  list-style: none;
+  line-height: 2em;
+  margin: 2em;
+}
+#area li {
+  display: inline;
+  padding: 2em 1em;
+  white-space: nowrap;
+}
+.margin-left {
+margin-left: 3em
+}
+.margin-right {
+margin-right: 3em
+}
+
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 0 0;
+  background: url(../img/P1.duet-blurred.png);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  color: white;
+}
+.masthead h1 {
+  font-size: 2em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.lyric {
+  font-style: italic;
+  white-space: pre;
+}
